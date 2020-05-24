@@ -1,0 +1,28 @@
+<div>
+  <section class="content">
+    <div class="container-fluid" style="background-color: white;">
+      <div class="row">
+        <div>
+          <section class="content">
+            <form #frm="ngForm">
+            <div class="container-fluid">
+             
+              <ion-item>
+                <ion-label>Model name</ion-label>
+                <ion-input type="text" id="modelnm"  name="modelnm" #modelnm="ngModel" [(ngModel)]="Modelnm"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label>Model No</ion-label>
+                <ion-input type="text" id="modelno"  name="modelno" #modelno="ngModel" [(ngModel)]="Modelno"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-button color="primary">ADD MakeMaster</ion-button>
+              </ion-item> 
+            </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

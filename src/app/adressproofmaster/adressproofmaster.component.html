@@ -1,0 +1,33 @@
+<div>
+  <section class="content">
+    <div class="container-fluid" style="background-color: white;">
+      <div class="row">
+        <div>
+          <section class="content">
+            <form #frm="ngForm">
+              <div class="container-fluid">
+
+                <ion-item>
+                  <ion-label>Title</ion-label>
+                  <ion-input type="text" id="title" name="title" #title="ngModel" [(ngModel)]="Title"></ion-input>
+                </ion-item>
+                <!-- <ion-item *ngIf="crud == Delete">
+                  <ion-label>Select Title</ion-label>
+                  <ion-select id="PlantId" name="PlantId" [(ngModel)]="Plant_Id" placeholder="Select One"
+                    name="PlantId">
+                    <ion-select-option *ngFor="let plant of PlantList" [value]="plant.AssetsMasterId">
+                      {{plant.PlantName}} - {{plant.DeptName}}
+                    </ion-select-option>
+                  </ion-select>
+                </ion-item> -->
+                <ion-item>
+                  <ion-button color="primary">Insert Title</ion-button>
+                </ion-item>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
